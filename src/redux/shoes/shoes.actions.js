@@ -15,7 +15,7 @@ export const fetchAllShoesThunk = () => {
     try {
       console.log("FETCHALLSHOESTHUNK IS FIRING");
       const response = await axios.get("http://localhost:8080/api/shoes");
-      console.log("FETCHALLSHOESTHUNK COMPLETED")
+      console.log("FETCHALLSHOESTHUNK COMPLETED");
       dispatch(fetchAllShoes(response.data));
     } catch (error) {
       console.error(error);
